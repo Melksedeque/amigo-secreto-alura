@@ -3,8 +3,14 @@ let amigo = document.getElementById("nome-amigo");
 
 function adicionar() {
   let lista = document.getElementById("lista-amigos");
+
   if (amigo.value.trim() === "") {
     alert("O nome do amigo não pode estar vazio.");
+    return;
+  }
+
+  if (amigos.includes(amigo.value)) {
+    alert("Esse amigo já foi adicionado.");
     return;
   }
 
