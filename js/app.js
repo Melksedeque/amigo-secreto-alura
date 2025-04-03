@@ -1,17 +1,16 @@
 let amigos = [];
+let amigo = document.getElementById("nome-amigo");
 
 function adicionar() {
-  let amigo = document.getElementById("nome-amigo").value;
   let lista = document.getElementById("lista-amigos");
-
-  amigos.push(amigo);
+  amigos.push(amigo.value);
   if (lista.textContent == "") {
-    lista.textContent = amigo;
+    lista.textContent = amigo.value;
   } else {
-    lista.textContent = lista.textContent + ", " + amigo;
+    lista.textContent = lista.textContent + ", " + amigo.value;
   }
 
-  amigo = "";
+  amigo.value = "";
 }
 
 function sortear() {
@@ -38,4 +37,11 @@ function embaralha(lista) {
       lista[indice - 1],
     ];
   }
+}
+
+function reiniciar() {
+  amigos = [];
+  amigo.value = "";
+  document.getElementById("lista-amigos").textContent = "";
+  document.getElementById("lista-sorteio").textContent = "";
 }
