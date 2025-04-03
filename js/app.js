@@ -3,6 +3,11 @@ let amigo = document.getElementById("nome-amigo");
 
 function adicionar() {
   let lista = document.getElementById("lista-amigos");
+  if (amigo.value.trim() === "") {
+    alert("O nome do amigo não pode estar vazio.");
+    return;
+  }
+
   amigos.push(amigo.value);
   if (lista.textContent == "") {
     lista.textContent = amigo.value;
@@ -11,6 +16,10 @@ function adicionar() {
   }
 
   amigo.value = "";
+
+  if (amigos.length < 4) {
+    alert("É necessário pelo menos 4 pessoas para realizar o sorteio.");
+  }
 }
 
 function sortear() {
