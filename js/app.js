@@ -16,6 +16,16 @@ function adicionar() {
 
 function sortear() {
   embaralha(amigos);
+  let sorteio = document.getElementById("lista-sorteio");
+
+  for (i = 0; i < amigos.length; i++) {
+    sorteio.innerHTML =
+      sorteio.innerHTML +
+      amigos[i] +
+      " --> " +
+      amigos[(i + 1) % amigos.length] +
+      "<br>";
+  }
 }
 
 function embaralha(lista) {
