@@ -1,7 +1,5 @@
 # Amigo Secreto - Desafio Alura
 
----
-
 ## Menu
 
 - [Layout](#layout)
@@ -28,11 +26,24 @@
 
 ## Descrição
 
+O **Amigo Secreto** é um projeto interativo desenvolvido como parte do Desafio Alura. Ele permite que os usuários adicionem nomes de amigos, embaralhem a lista e realizem o sorteio de pares para o tradicional jogo de Amigo Secreto. O projeto é simples, intuitivo e ideal para pequenas reuniões ou eventos.
+
 ### Principais recursos incluem
+
+- Adicionar nomes de amigos à lista.
+- Embaralhar os nomes automaticamente.
+- Realizar o sorteio, exibindo os pares formados.
+- Reiniciar o sorteio e limpar os dados com um clique.
+
+O design é responsivo e utiliza uma paleta de cores vibrante, com foco em acessibilidade e usabilidade.
 
 ---
 
 ## Tecnologias Utilizadas
+
+- **HTML5**: Estrutura semântica da página.
+- **CSS3**: Estilização e layout responsivo.
+- **JavaScript**: Lógica de manipulação de dados e interatividade.
 
 ---
 
@@ -49,10 +60,14 @@ amigo-secreto/
 ├── index.html                  # Página principal
 ├── LICENSE                     # Arquivo de LICENÇA MIT
 ├── README.md                   # Arquivo README do projeto
-└── style.css               # Estilo do projeto
+└── style.css                   # Estilo do projeto
 ```
 
 ### Arquivos Principais
+
+- `index.html`: Estrutura principal do projeto.
+- `style.css`: Estilos personalizados para o layout.
+- `app.js`: Lógica de manipulação de dados e interatividade.
 
 ---
 
@@ -70,7 +85,13 @@ git clone https://github.com/Melksedeque/amigo-secreto-alura.git
 
 ### Casos de Uso Comuns
 
+- Adicionar amigos à lista e realizar o sorteio.
+- Reiniciar o sorteio para começar novamente.
+
 ### Solução de Problemas
+
+- Certifique-se de que o navegador suporta JavaScript.
+- Verifique se todos os arquivos estão no mesmo diretório.
 
 ---
 
