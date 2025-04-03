@@ -16,13 +16,13 @@ function adicionar() {
   }
 
   amigo.value = "";
-
-  if (amigos.length < 4) {
-    alert("É necessário pelo menos 4 pessoas para realizar o sorteio.");
-  }
 }
 
 function sortear() {
+  if (amigos.length < 4) {
+    alert("É necessário pelo menos 4 pessoas para realizar o sorteio.");
+    return;
+  }
   embaralha(amigos);
   let sorteio = document.getElementById("lista-sorteio");
 
