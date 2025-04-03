@@ -9,7 +9,7 @@ function adicionar() {
     return;
   }
 
-  if (amigos.includes(amigo.value)) {
+  if (amigos.some((a) => a.toLowerCase() === amigo.value.toLowerCase())) {
     alert("Esse amigo já foi adicionado.");
     return;
   }
